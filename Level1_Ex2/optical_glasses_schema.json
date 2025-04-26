@@ -1,0 +1,184 @@
+{
+  "$jsonSchema": {
+    "bsonType": "object",
+    "required": [
+      "_id",
+      "bought_by",
+      "brand",
+      "frame_colour",
+      "frame_type",
+      "glass_colour",
+      "graduation",
+      "Price",
+      "Supplier"
+    ],
+    "properties": {
+      "_id": {
+        "bsonType": "objectId"
+      },
+      "bought_by": {
+        "bsonType": "array",
+        "items": {
+          "bsonType": "object",
+          "properties": {
+            "address": {
+              "bsonType": "object",
+              "properties": {
+                "city": {
+                  "bsonType": "string"
+                },
+                "country": {
+                  "bsonType": "string"
+                },
+                "door": {
+                  "bsonType": "int"
+                },
+                "floor": {
+                  "bsonType": "int"
+                },
+                "number": {
+                  "bsonType": "int"
+                },
+                "postal_code": {
+                  "bsonType": "string"
+                },
+                "Street": {
+                  "bsonType": "string"
+                }
+              },
+              "required": [
+                "city",
+                "country",
+                "door",
+                "floor",
+                "number",
+                "postal_code",
+                "Street"
+              ]
+            },
+            "name": {
+              "bsonType": "string"
+            },
+            "phone": {
+              "bsonType": "string"
+            },
+            "recommended_by": {
+              "bsonType": "objectId"
+            },
+            "registration_date": {
+              "bsonType": "date"
+            },
+            "surname": {
+              "bsonType": "string"
+            }
+          },
+          "required": [
+            "address",
+            "name",
+            "phone",
+            "recommended_by",
+            "registration_date",
+            "surname"
+          ]
+        }
+      },
+      "brand": {
+        "bsonType": "string"
+      },
+      "frame_colour": {
+        "bsonType": "string"
+      },
+      "frame_type": {
+        "bsonType": "string"
+      },
+      "glass_colour": {
+        "bsonType": "object",
+        "properties": {
+          "left": {
+            "bsonType": "string"
+          },
+          "right": {
+            "bsonType": "string"
+          }
+        },
+        "required": [
+          "left",
+          "right"
+        ]
+      },
+      "graduation": {
+        "bsonType": "object",
+        "properties": {
+          "left": {
+            "bsonType": "double"
+          },
+          "right": {
+            "bsonType": "double"
+          }
+        },
+        "required": [
+          "left",
+          "right"
+        ]
+      },
+      "Price": {
+        "bsonType": "double"
+      },
+      "Supplier": {
+        "bsonType": "object",
+        "properties": {
+          "address": {
+            "bsonType": "object",
+            "properties": {
+              "city": {
+                "bsonType": "string"
+              },
+              "country": {
+                "bsonType": "string"
+              },
+              "door": {
+                "bsonType": "int"
+              },
+              "floor": {
+                "bsonType": "int"
+              },
+              "number": {
+                "bsonType": "int"
+              },
+              "postal_code": {
+                "bsonType": "string"
+              },
+              "street": {
+                "bsonType": "string"
+              }
+            },
+            "required": [
+              "city",
+              "country",
+              "door",
+              "floor",
+              "number",
+              "postal_code",
+              "street"
+            ]
+          },
+          "fax": {
+            "bsonType": "int"
+          },
+          "name": {
+            "bsonType": "string"
+          },
+          "phone_number": {
+            "bsonType": "int"
+          }
+        },
+        "required": [
+          "address",
+          "fax",
+          "name",
+          "phone_number"
+        ]
+      }
+    }
+  }
+}

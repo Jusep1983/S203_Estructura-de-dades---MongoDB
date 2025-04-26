@@ -1,0 +1,97 @@
+[{
+  "_id": {
+    "$oid": "680cfa7353a7920b809fd018"
+  },
+  "order_time": {
+    "$date": "2025-04-26T12:00:00.000Z"
+  },
+  "order_type": "Delivery",
+  "products": [
+    {
+      "product": {
+        "_id_product": {
+          "$oid": "680cfa7353a7920b809fd01a"
+        },
+        "name": "Pizza peperoni",
+        "description": "Mozzarella, tomato and peperoni",
+        "thumbnail": "https://myserver.com/images/thumPizzaPeperoni.jpg",
+        "category": "Especial",
+        "price": 15.25
+      },
+      "quantity": 1
+    },
+    {
+      "product": {
+        "_id_product": {
+          "$oid": "680cfa7353a7920b809fd01b"
+        },
+        "name": "Hamburguesa con queso",
+        "description": "Hamburguesa vacuno, cheedar y salsa especial",
+        "thumbnail": "https://myserver.com/images/thumHamburguesaCheedar.jpg",
+        "category": null,
+        "price": 13.55
+      },
+      "quantity": 1
+    },
+    {
+      "product": {
+        "_id_product": {
+          "$oid": "680cfa7353a7920b809fd01c"
+        },
+        "name": "Cerveza Mahou clasica",
+        "description": "Cerveza Mahou clasica lata 33cl",
+        "thumbnail": "https://myserver.com/images/thumMahouClasica.jpg",
+        "category": null,
+        "price": 2.25
+      },
+      "quantity": 2
+    }
+  ],
+  "total_price": 33.3,
+  "additional_info": "Insistir con el timbre",
+  "client": {
+    "_id_client": {
+      "$oid": "680cfa7353a7920b809fd01c"
+    },
+    "name": "Manolito",
+    "surname": "Huevo Frito",
+    "address": {
+      "Street": "San Ramon",
+      "number": 12,
+      "floor": 2,
+      "door": 5
+    },
+    "city": "Cerdanyola del Vallès",
+    "postal_code": "08290",
+    "province": "Barcelona",
+    "phone": "661555666"
+  },
+  "shop": {
+    "_id_shop": {
+      "$oid": "680cfa7353a7920b809fd01d"
+    },
+    "address": {
+      "Street": "Calle padró",
+      "number": 2,
+      "floor": null,
+      "door": null
+    },
+    "city": "Ripollet",
+    "postal_code": "08291",
+    "province": "Barcelona",
+    "phone": "661555777"
+  },
+  "employee_assigned": {
+    "_id_shop": {
+      "$oid": "680cfa7353a7920b809fd01e"
+    },
+    "name": "Aitor",
+    "surname": "Menta",
+    "NIF": "57910461N",
+    "phone": 754754754,
+    "role": "delivery_driver",
+    "delivery_time": {
+      "$date": "2025-04-26T12:41:33.000Z"
+    }
+  }
+}]

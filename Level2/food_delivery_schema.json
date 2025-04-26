@@ -1,0 +1,227 @@
+{
+  "$jsonSchema": {
+    "bsonType": "object",
+    "required": [
+      "_id",
+      "additional_info",
+      "client",
+      "employee_assigned",
+      "order_time",
+      "order_type",
+      "products",
+      "shop",
+      "total_price"
+    ],
+    "properties": {
+      "_id": {
+        "bsonType": "objectId"
+      },
+      "additional_info": {
+        "bsonType": "string"
+      },
+      "client": {
+        "bsonType": "object",
+        "properties": {
+          "_id_client": {
+            "bsonType": "objectId"
+          },
+          "address": {
+            "bsonType": "object",
+            "properties": {
+              "door": {
+                "bsonType": "int"
+              },
+              "floor": {
+                "bsonType": "int"
+              },
+              "number": {
+                "bsonType": "int"
+              },
+              "Street": {
+                "bsonType": "string"
+              }
+            },
+            "required": [
+              "door",
+              "floor",
+              "number",
+              "Street"
+            ]
+          },
+          "city": {
+            "bsonType": "string"
+          },
+          "name": {
+            "bsonType": "string"
+          },
+          "phone": {
+            "bsonType": "string"
+          },
+          "postal_code": {
+            "bsonType": "string"
+          },
+          "province": {
+            "bsonType": "string"
+          },
+          "surname": {
+            "bsonType": "string"
+          }
+        },
+        "required": [
+          "_id_client",
+          "address",
+          "city",
+          "name",
+          "phone",
+          "postal_code",
+          "province",
+          "surname"
+        ]
+      },
+      "employee_assigned": {
+        "bsonType": "object",
+        "properties": {
+          "_id_shop": {
+            "bsonType": "objectId"
+          },
+          "delivery_time": {
+            "bsonType": "date"
+          },
+          "name": {
+            "bsonType": "string"
+          },
+          "NIF": {
+            "bsonType": "string"
+          },
+          "phone": {
+            "bsonType": "int"
+          },
+          "role": {
+            "bsonType": "string"
+          },
+          "surname": {
+            "bsonType": "string"
+          }
+        },
+        "required": [
+          "_id_shop",
+          "delivery_time",
+          "name",
+          "NIF",
+          "phone",
+          "role",
+          "surname"
+        ]
+      },
+      "order_time": {
+        "bsonType": "date"
+      },
+      "order_type": {
+        "bsonType": "string"
+      },
+      "products": {
+        "bsonType": "array",
+        "items": {
+          "bsonType": "object",
+          "properties": {
+            "product": {
+              "bsonType": "object",
+              "properties": {
+                "_id_product": {
+                  "bsonType": "objectId"
+                },
+                "category": {
+                  "bsonType": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "description": {
+                  "bsonType": "string"
+                },
+                "name": {
+                  "bsonType": "string"
+                },
+                "price": {
+                  "bsonType": "double"
+                },
+                "thumbnail": {
+                  "bsonType": "string"
+                }
+              },
+              "required": [
+                "_id_product",
+                "category",
+                "description",
+                "name",
+                "price",
+                "thumbnail"
+              ]
+            },
+            "quantity": {
+              "bsonType": "int"
+            }
+          },
+          "required": [
+            "product",
+            "quantity"
+          ]
+        }
+      },
+      "shop": {
+        "bsonType": "object",
+        "properties": {
+          "_id_shop": {
+            "bsonType": "objectId"
+          },
+          "address": {
+            "bsonType": "object",
+            "properties": {
+              "door": {
+                "bsonType": "null"
+              },
+              "floor": {
+                "bsonType": "null"
+              },
+              "number": {
+                "bsonType": "int"
+              },
+              "Street": {
+                "bsonType": "string"
+              }
+            },
+            "required": [
+              "door",
+              "floor",
+              "number",
+              "Street"
+            ]
+          },
+          "city": {
+            "bsonType": "string"
+          },
+          "phone": {
+            "bsonType": "string"
+          },
+          "postal_code": {
+            "bsonType": "string"
+          },
+          "province": {
+            "bsonType": "string"
+          }
+        },
+        "required": [
+          "_id_shop",
+          "address",
+          "city",
+          "phone",
+          "postal_code",
+          "province"
+        ]
+      },
+      "total_price": {
+        "bsonType": "double"
+      }
+    }
+  }
+}

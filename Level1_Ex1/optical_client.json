@@ -1,0 +1,60 @@
+[{
+  "_id": {
+    "$oid": "680c5af948ba545983436ff8"
+  },
+  "name": "Manolito",
+  "surname": "Huevo Frito",
+  "address": {
+    "Street": "San Ramon",
+    "number": 12,
+    "floor": 2,
+    "door": 5,
+    "city": "Barcelona",
+    "postal_code": "08001",
+    "country": "Spain"
+  },
+  "phone": "661555666",
+  "recommended_by": {
+    "$oid": "680a15b4917908fe4a1193ab"
+  },
+  "registration_date": {
+    "$date": "2025-04-25T12:00:00.000Z"
+  },
+  "last_sale": {
+    "glasses": {
+      "brand": "Ray-ban",
+      "graduation": {
+        "left": 2.3,
+        "right": 2.0
+      },
+      "frame_type": "P",
+      "frame_colour": "Red",
+      "glass_colour": {
+        "left": "Gray",
+        "right": "Gray"
+      },
+      "Price": 125.25,
+      "Supplier": {
+        "name": "SupplierA",
+        "address": {
+          "street": "San Luis",
+          "number": 25,
+          "floor": 2,
+          "door": 5,
+          "city": "Barcelona",
+          "postal_code": "00820",
+          "country": "España"
+        },
+        "phone_number": 666555444,
+        "fax": 666555333
+      }
+    },
+    "sold_by": {
+      "name": "Donpi",
+      "surname": "Topocho"
+    },
+    "sold_date": {
+      "$date": "2025-04-25T12:15:00.000Z"
+    }
+  }
+}]
