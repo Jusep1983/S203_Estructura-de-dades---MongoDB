@@ -15,10 +15,13 @@ Nivel 1 (clica en el desplegable para el enunciado completo)
     Una óptica llamada "Cul d'Ampolla" quiere informatizar la gestión de clientes y ventas de gafas.  
     Los requisitos son los siguientes:
     
-    - Proveedores: Nombre, dirección (calle, número, piso, puerta, ciudad, código postal y país), teléfono, fax, NIF.
-    - Ulleres: Marca, graduación de cada lente, tipo de montura (flotante, pasta o metálica), color de la montura, color de cada lente y precio.
+    - Proveedores: Nombre, dirección (calle, número, piso, puerta, ciudad, código postal y país), 
+    teléfono, fax, NIF.
+    - Ulleres: Marca, graduación de cada lente, tipo de montura (flotante, pasta o metálica), 
+    color de la montura, color de cada lente y precio.
     - Clientes: Nombre, dirección postal, teléfono, correo electrónico, fecha de registro.
-    - Recomendaciones: En caso de que un cliente haya sido recomendado por otro, guardar quién fue la persona que lo recomendó.
+    - Recomendaciones: En caso de que un cliente haya sido recomendado por otro, 
+    guardar quién fue la persona que lo recomendó.
     - Empleados: Almacenar quién vendió cada gafas y cuándo ocurrió la venta.
   
     ## Ejercicio 2 - Ulleres  
@@ -36,11 +39,15 @@ Nivel 1 (clica en el desplegable para el enunciado completo)
     Se ha contratado para diseñar la base de datos de una web que permita realizar pedidos de comida a domicilio.  
     Los requisitos para el modelo de base de datos son los siguientes:
     
-    - Clientes: Cada cliente tiene un identificador único y se almacena su nombre, apellidos, dirección, código postal, localidad, provincia y teléfono.
-    - Comandas: Cada comanda tiene un identificador único y se almacena la fecha/hora de realización, tipo de comanda (domicilio o recoger en tienda), la cantidad de productos de cada tipo, el precio total y una nota adicional.
-    - Productos: Pueden ser pizzas, hamburguesas o bebidas. Cada producto tiene un identificador único, nombre, descripción, imagen y precio. Las pizzas pueden pertenecer a varias categorías.
+    - Clientes: Cada cliente tiene un identificador único y se almacena su nombre, apellidos, dirección, 
+    código postal, localidad, provincia y teléfono.
+    - Comandas: Cada comanda tiene un identificador único y se almacena la fecha/hora de realización, 
+    tipo de comanda (domicilio o recoger en tienda), la cantidad de productos de cada tipo, el precio total y una nota adicional.
+    - Productos: Pueden ser pizzas, hamburguesas o bebidas. Cada producto tiene un identificador único, nombre, descripción, 
+    imagen y precio. Las pizzas pueden pertenecer a varias categorías.
     - Tiendas: Cada tienda tiene un identificador único y se almacena su dirección, código postal, localidad y provincia.
-    - Empleados: Cada empleado tiene un identificador único y se almacena su nombre, apellidos, NIF, teléfono y su rol (cocinero o repartidor).  
+    - Empleados: Cada empleado tiene un identificador único y se almacena su nombre, apellidos, NIF, teléfono y 
+    su rol (cocinero o repartidor).  
     - Repartidores: Almacenamos quién es el repartidor asignado a cada pedido y la fecha/hora de la entrega.
 
 </details>
