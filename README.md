@@ -11,18 +11,18 @@ Nivel 1 (clica en el desplegable para el enunciado completo)
   
 </summary>
   
-  ## Ejercicio 1 - Òptica  
-  Una óptica llamada "Cul d'Ampolla" quiere informatizar la gestión de clientes y ventas de gafas.  
-  Los requisitos son los siguientes:
+    ## Ejercicio 1 - Òptica  
+    Una óptica llamada "Cul d'Ampolla" quiere informatizar la gestión de clientes y ventas de gafas.  
+    Los requisitos son los siguientes:
+    
+    - Proveedores: Nombre, dirección (calle, número, piso, puerta, ciudad, código postal y país), teléfono, fax, NIF.
+    - Ulleres: Marca, graduación de cada lente, tipo de montura (flotante, pasta o metálica), color de la montura, color de cada lente y precio.
+    - Clientes: Nombre, dirección postal, teléfono, correo electrónico, fecha de registro.
+    - Recomendaciones: En caso de que un cliente haya sido recomendado por otro, guardar quién fue la persona que lo recomendó.
+    - Empleados: Almacenar quién vendió cada gafas y cuándo ocurrió la venta.
   
-  - **Proveedores:** Nombre, dirección (calle, número, piso, puerta, ciudad, código postal y país), teléfono, fax, NIF.
-  - **Ulleres:** Marca, graduación de cada lente, tipo de montura (flotante, pasta o metálica), color de la montura, color de cada lente y precio.
-  - **Clientes:** Nombre, dirección postal, teléfono, correo electrónico, fecha de registro.
-  - **Recomendaciones:** En caso de que un cliente haya sido recomendado por otro, guardar quién fue la persona que lo recomendó.
-  - **Empleados:** Almacenar quién vendió cada gafas y cuándo ocurrió la venta.
-
-  ## Ejercicio 2 - Ulleres  
-  ¿Y si el punto de vista de la interfaz fuera las gafas? ¿Cómo modelarías la base de datos?
+    ## Ejercicio 2 - Ulleres  
+    ¿Y si el punto de vista de la interfaz fuera las gafas? ¿Cómo modelarías la base de datos?
 
 </details>
 
@@ -32,16 +32,16 @@ Nivel 1 (clica en el desplegable para el enunciado completo)
   
 </summary>
   
-  ## Ejercicio 1 - Pedido de Comida a Domicilio  
-  Se ha contratado para diseñar la base de datos de una web que permita realizar pedidos de comida a domicilio.  
-  Los requisitos para el modelo de base de datos son los siguientes:
-  
-  - **Clientes:** Cada cliente tiene un identificador único y se almacena su nombre, apellidos, dirección, código postal, localidad, provincia y teléfono.
-  - **Comandas:** Cada comanda tiene un identificador único y se almacena la fecha/hora de realización, tipo de comanda (domicilio o recoger en tienda), la cantidad de productos de cada tipo, el precio total y una nota adicional.
-  - **Productos:** Pueden ser pizzas, hamburguesas o bebidas. Cada producto tiene un identificador único, nombre, descripción, imagen y precio. Las pizzas pueden pertenecer a varias categorías.
-  - **Tiendas:** Cada tienda tiene un identificador único y se almacena su dirección, código postal, localidad y provincia.
-  - **Empleados:** Cada empleado tiene un identificador único y se almacena su nombre, apellidos, NIF, teléfono y su rol (cocinero o repartidor).  
-  - **Repartidores:** Almacenamos quién es el repartidor asignado a cada pedido y la fecha/hora de la entrega.
+    ## Ejercicio 1 - Pedido de Comida a Domicilio  
+    Se ha contratado para diseñar la base de datos de una web que permita realizar pedidos de comida a domicilio.  
+    Los requisitos para el modelo de base de datos son los siguientes:
+    
+    - Clientes: Cada cliente tiene un identificador único y se almacena su nombre, apellidos, dirección, código postal, localidad, provincia y teléfono.
+    - Comandas: Cada comanda tiene un identificador único y se almacena la fecha/hora de realización, tipo de comanda (domicilio o recoger en tienda), la cantidad de productos de cada tipo, el precio total y una nota adicional.
+    - Productos: Pueden ser pizzas, hamburguesas o bebidas. Cada producto tiene un identificador único, nombre, descripción, imagen y precio. Las pizzas pueden pertenecer a varias categorías.
+    - Tiendas: Cada tienda tiene un identificador único y se almacena su dirección, código postal, localidad y provincia.
+    - Empleados: Cada empleado tiene un identificador único y se almacena su nombre, apellidos, NIF, teléfono y su rol (cocinero o repartidor).  
+    - Repartidores: Almacenamos quién es el repartidor asignado a cada pedido y la fecha/hora de la entrega.
 
 </details>
 
@@ -65,7 +65,9 @@ Para ejecutar el proyecto es necesario contar con:
 
 Clona el repositorio:
 
-- git clone:   https://github.com/Jusep1983/S203_Estructura-de-dades---MongoDB.git
+- git clone:
+ 
+      https://github.com/Jusep1983/S203_Estructura-de-dades---MongoDB.git
 
 - Abre MongoDB Compass u otra herramienta compatible.
 
